@@ -1,19 +1,29 @@
 import React, { useState } from 'react';
-import logo from './VOCO-Logo.svg';
+import Container from 'react-bootstrap/Container';
 import Chat from './Chat';
 import './App.css';
+import Row from "react-bootstrap/Row";
+import logo from './VOCO-Logo.svg';
+import Col from "react-bootstrap/Col";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <div>
-          <Chat />
-        </div>
-      </header>
-    </div>
-  );
+      <Container>
+          <Container fluid>
+              <Row>
+                  <Col>
+                      <img src={logo} className="App-logo p-2 fixed-top" alt="logo"/>
+                  </Col>
+              </Row>
+          </Container>
+         <Container>
+             <Row className={"App"}>
+                 <Chat />
+             </Row>
+         </Container>
+
+      </Container>
+);
 }
 
 export default App;
