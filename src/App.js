@@ -12,12 +12,12 @@ function App() {
           <Container fluid>
               <Row>
                   <Col>
-                      <img src={logo} className="App-logo p-2 fixed-top" alt="logo"/>
+                      <img src={logo} className="App-logo p-2 float-start" alt="logo"/>
                   </Col>
               </Row>
           </Container>
          <Container>
-             <Row className={"App"}>
+             <Row className="App justify-content-center">
                  <Chat />
              </Row>
          </Container>

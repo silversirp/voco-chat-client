@@ -10,7 +10,7 @@
 
 #chatBox {
   /*max-height: 80vh;*/
-  overflow-y: scroll;
+  /*overflow-y: scroll;*/
 }
 
 /*@media (prefers-reduced-motion: no-preference) {
